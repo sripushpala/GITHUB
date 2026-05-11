@@ -13,6 +13,11 @@ on:
   pull_request:
     branches: [main]          # Run on PRs targeting main
 
+#--Enforciing JAVA node to access node24--
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+#--
+
 # JOBS: What should happen?
 jobs:
   # Job 1: Run tests
